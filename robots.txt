@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://braddevicesofficial.github.io/sitemap.xml
