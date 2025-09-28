@@ -1,180 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Brad Devices</title>
-
-    <meta name="description" content="Get in touch with Brad Devices for inquiries, support, or partnership opportunities. Contact us via email or visit our location in Kisian, Kisumu, Kenya." />
-    <meta name="keywords" content="Brad Devices contact, Brad Devices email, tech support, partnership, Kisian, Kisumu, Kenya" />
-    <meta name="author" content="Festus Bradley Nyadimo" />
-
-    <meta property="og:title" content="Contact Brad Devices" />
-    <meta property="og:description" content="Reach out to the team at Brad Devices for all your inquiries. We are here to help." />
-    <meta property="og:url" content="https://braddevicesofficial.github.io/contact.html" />
-    <meta property="og:type" content="contact" />
-    <meta property="og:image" content="https://braddevicesofficial.github.io/brad_devices_logo.png" />
-    
-    <style>
-        /* Basic Styling (should be identical to index.html for consistency) */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #1a1a1a; /* Dark background */
-            color: #f0f0f0; /* Light text */
-        }
-        header {
-            background: #0d0d0d;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            /* Removed border-bottom for consistency with index.html */
-        }
-        header img {
-            width:100px; /* Adjust size as needed */
-            height:auto;
-            display:block;
-            margin: 0 auto 10px; /* Center image and add space below */
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            /* Changed color to match index.html */
-            color: #00bcd4; /* Brad Devices blue for title */
-        }
-        nav {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            /* Changed color to match index.html */
-            color: #00bcd4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            /* Changed hover color to match index.html */
-            color: #0097a7;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        .content-section {
-            background: #2b2b2b;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        .content-section h2 {
-            /* Changed color to match index.html */
-            color: #00bcd4;
-            margin-bottom: 15px;
-        }
-        .contact-info p {
-            margin-bottom: 10px;
-        }
-        .contact-info a {
-            /* Changed color to match index.html */
-            color: #00bcd4;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-                text-decoration: underline;
-            }
-        footer {
-            background: #0d0d0d;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
-            /* Changed border-top color for consistency */
-            border-top: 2px solid #00bcd4;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "url": "https://braddevicesofficial.github.io/contact.html",
-      "name": "Contact Us - Brad Devices",
-      "description": "Official contact page for Brad Devices, a tech company focused on integrated technology and innovation.",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Brad Devices",
-        "email": "mailto:brad.devices.official@gmail.com",
-        "url": "https://braddevicesofficial.github.io/",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Kisumu",
-          "addressRegion": "Kisumu County",
-          "addressCountry": "Kenya"
-        },
-        "founder": {
-          "@type": "Person",
-          "name": "Festus Bradley Nyadimo",
-          "jobTitle": "The Architect",
-          "url": "https://braddevicesofficial.github.io/bradtechindustries.github.io/"
-        }
-      }
-    }
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Brad Devices</title>
+  <meta name="description" content="Contact Brad Devices — press, partnerships, and collaboration." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-    <header>
-        <img src="brad_devices_logo.png" alt="Brad Devices Logo" style="width:100px; height:auto; display:block; margin: 0 auto 10px;">
-        <h1>BRAD DEVICES</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <header class="header">
+    <div class="container topbar">
+      <div class="brand">
+        <img src="brad_devices_logo.jpg" alt="Brad Devices logo">
+        <h1>Brad Devices</h1>
+      </div>
+      <div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  
+  <nav id="mobileNav" class="mobile-nav" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://github.com/BradDevicesOfficial" target="_blank" rel="noopener">GitHub</a>
+  </nav>
 
-    <section class="container content-section">
-        <h2>Contact Brad Devices</h2>
-        <p>We're eager to connect with you. Whether you have questions, partnership inquiries, or simply want to learn more about our innovations, feel free to reach out.</p>
+  <main class="container" style="padding:2.6rem 0 4rem">
+    <section class="content-section">
+      <h2>Contact & Partnerships</h2>
+      <p>We welcome serious collaborators, R&D partners, institutions and vetted investors. Please use the channels below so we can match your query to the right team.</p>
 
-        <div class="contact-info">
-            <p><strong>General Inquiries:</strong> <a href="mailto:brad.devices.official@gmail.com">brad.devices.official@gmail.com</a></p>
-            <p><strong>Founder's Office:</strong> <a href="mailto:bradleynyadimo@gmail.com">bradleynyadimo@gmail.com</a></p>
-            <p><strong>Location:</strong> Kisian, Kisumu, Kenya</p>
-            <p><strong>Postal Address:</strong> [To be determined/added later if applicable]</p>
-            <p>We aim to respond to all inquiries within 1-2 business days.</p>
+      <div class="contact-grid">
+        <div class="details-block">
+          <h3>General Inquiries</h3>
+          <p><strong>BradVerse Email:</strong> <a href="mailto:brad.verse.official@gmail.com">brad.verse.official@gmail.com</a></p>
+          <p><strong>Brad Devices (press & prototypes):</strong> <a href="mailto:brad.devices.official@gmail.com">brad.devices.official@gmail.com</a></p>
+          <p><strong>Founder (The Architect):</strong> <a href="mailto:bradleynyadimo@gmail.com">bradleynyadimo@gmail.com</a></p>
+
+          <h3 style="margin-top:1rem">Partnerships & Pilots</h3>
+          <p>For AI/health, education or mobility pilots — include a 1-page summary, expected pilot location, and contact details. We prioritize projects aligned to SDGs and academic collaborations.</p>
         </div>
+
+        <aside class="details-block">
+          <h4>Office</h4>
+          <p>Kisian, Kisumu, Kenya</p>
+          <h4 style="margin-top:1rem">Social & Code</h4>
+          <p><a href="https://github.com/BradDevicesOfficial" target="_blank">GitHub / BradDevicesOfficial</a></p>
+          <p><a href="https://medium.com/@bradleynyadimo" target="_blank">Medium: Festus Bradley</a></p>
+          <h4 style="margin-top:1rem">Press Kit</h4>
+          <p><a href="BradDevices_Presskit.pdf" target="_blank">Download press kit (pdf)</a></p>
+        </aside>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Brad Devices. All rights reserved.</p>
-            <p>Innovating from Kisian, Kisumu, Kenya.</p>
-            <p>Contact: <a href="mailto:brad.devices.official@gmail.com">brad.devices.official@gmail.com</a></p>
-            <p>A part of the BradTech Industries family. Learn more about the main empire here: <a href="https://braddevicesofficial.github.io/bradtechindustries.github.io/" target="_blank">BradTech Industries</a></p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Brad Devices — BradVerse</p>
+      <p><a href="mailto:brad.verse.official@gmail.com">brad.verse.official@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav toggle
+    const navToggle = document.getElementById('navToggle'), mobileNav = document.getElementById('mobileNav');
+    navToggle && navToggle.addEventListener('click', ()=> {
+      const open = mobileNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open?'true':'false');
+      mobileNav.setAttribute('aria-hidden', open?'false':'true');
+    });
+  </script>
 </body>
 </html>
+
 
 
