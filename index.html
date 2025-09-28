@@ -1,191 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Brad Devices: Redefining integrated technology with our proprietary BradOS, advanced AI (NeuroSense), and uncompromised security protocols (BradSec)." />
-    <meta name="keywords" content="Brad Devices, BradOS, BradSec, NeuroSense, integrated technology, vertical integration, tech hardware, African tech" />
-    <meta name="author" content="Festus Bradley Nyadimo, The Architect" />
-
-    <meta property="og:title" content="Brad Devices" />
-    <meta property="og:description" content="Redefining integrated technology with our proprietary BradOS, advanced AI (NeuroSense), and uncompromised security protocols (BradSec)." />
-    <meta property="og:url" content="https://braddevicesofficial.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://braddevicesofficial.github.io/brad_devices_logo.png" />
-
-    <title>Brad Devices - Redefining Integrated Technology</title>
-    <style>
-        /* Basic Website Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #1a1a1a; /* Dark background */
-            color: #f0f0f0; /* Light text */
-        }
-        header {
-            background: #0d0d0d;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center; /* Center header content */
-        }
-        header img {
-            width:100px; /* Adjust size as needed */
-            height:auto;
-            display:block;
-            margin: 0 auto 10px; /* Center image and add space below */
-        }
-        header h1 {
-            margin: 0;
-            color: #00bcd4; /* Blue color for title */
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            background: #222;
-        }
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-            padding: 10px 0;
-        }
-        nav ul li a {
-            color: #00bcd4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background: #282828;
-            margin-bottom: 20px;
-        }
-        .hero h2 {
-            color: #00bcd4;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            max-width: 800px;
-            margin: 0 auto 30px;
-            line-height: 1.6;
-        }
-        .hero button {
-            background: #00bcd4;
-            color: #fff;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.1em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .hero button:hover {
-            background: #0097a7;
-        }
-        .section-content {
-            background: #282828;
-            padding: 30px 20px;
-            margin: 0 20px 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .section-content h3 {
-            color: #00bcd4;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-        .section-content p {
-            line-height: 1.5;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #0d0d0d;
-            color: #aaa;
-            font-size: 0.9em;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Brad Devices",
-      "url": "https://braddevicesofficial.github.io/",
-      "logo": "https://braddevicesofficial.github.io/brad_devices_logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "mailto:info@braddevices.co.ke"
-      }
-    }
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brad Devices — BradVerse</title>
+  <meta name="description" content="Brad Devices — BradOS, NeuroSense AI, BradSec and a vertically integrated hardware ecosystem built by The Architect." />
+  <meta name="keywords" content="Brad Devices, BradOS, NeuroSense, BradCore, BradSec, BradMotors" />
+  <meta name="author" content="Festus Bradley Nyadimo (The Architect)" />
+  <meta property="og:title" content="Brad Devices — BradVerse" />
+  <meta property="og:description" content="A unified ecosystem of devices, OS, AI and security. Brad Devices — built to empower builders." />
+  <meta property="og:image" content="brad_devices_logo.jpg" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Brad Devices",
+    "url":"https://braddevicesofficial.github.io/",
+    "logo":"https://braddevicesofficial.github.io/brad_devices_logo.jpg",
+    "founder":{"@type":"Person","name":"Festus Bradley Nyadimo","jobTitle":"The Architect"},
+    "sameAs":["https://github.com/BradDevicesOfficial"],
+    "description":"Brad Devices — vertically integrated hardware and software ecosystem powered by NeuroSense AI."
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <img src="brad_devices_logo.png" alt="Brad Devices Logo" style="width:100px; height:auto; display:block; margin: 0 auto 10px;">
-        <h1>BRAD DEVICES</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <a class="skip-link" href="#main" style="position:absolute;left:-999px">Skip to main</a>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Redefining Integrated Technology</h2>
-            <p>Welcome to Brad Devices, where we envision a future where technology is seamlessly integrated, intuitively powerful, and uncompromisingly secure. We are building a vertically integrated ecosystem from the ground up.</p>
-            <button>Discover Our Vision</button>
+  <header class="header">
+    <div class="container topbar">
+      <div class="brand">
+        <img src="brad_devices_logo.jpg" alt="Brad Devices logo">
+        <div>
+          <h1>Brad Devices</h1>
+          <div style="font-size:.8rem;color:#9aa0a6">By BradVerse</div>
         </div>
+      </div>
+
+      <div>
+        <nav class="nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://github.com/BradDevicesOfficial" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  
+  <nav id="mobileNav" class="mobile-nav" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://github.com/BradDevicesOfficial" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <h2>Brad Devices — The Architect’s Hardware & OS Vision</h2>
+        <p>We build vertically integrated devices — hardware, silicon, OS and AI — purpose-built to deliver secure, intelligent and seamless experiences. BradOS + NeuroSense + BradSec = devices that think, protect, and perform.</p>
+        <div class="cta-row">
+          <a class="btn" href="about.html">Explore the Ecosystem</a>
+          <a class="btn secondary" href="BradDevices_Presskit.pdf" target="_blank">Download Press Kit</a>
+        </div>
+      </div>
     </section>
 
-    <div class="section-content">
-        <h3>BradOS: The Core</h3>
-        <p>Our proprietary operating system, designed for unparalleled intuition and security across all Brad Devices.</p>
-    </div>
+    <section class="section" id="divisions">
+      <div class="container">
+        <h3>🏢 Product Lines & Core Divisions</h3>
+        <div class="pro-grid">
+          <div class="pro-card">
+            <h5>Brad Phones</h5>
+            <small>Brad P Series • Brad P Ultra • Brad Nova</small>
+            <p>Flagship camera systems (BradVision), BradVerify biometrics, NeuroSense-enhanced imaging, and BradOS mobile experience.</p>
+          </div>
+          <div class="pro-card">
+            <h5>BradMatrix & BradComp</h5>
+            <small>BradMatrix (laptops) • Brad Comp (desktops) • Brad Comp AIO</small>
+            <p>From student machines to AI workstations (BradCore & BradXon options) — unified by BradOS Pro.</p>
+          </div>
+          <div class="pro-card">
+            <h5>Brad Slate</h5>
+            <small>Brad Slate • Brad Slate Ultra</small>
+            <p>Tablets for creators and pros with BradPen support and BradCanvas digitizers.</p>
+          </div>
+          <div class="pro-card">
+            <h5>SentinelView</h5>
+            <small>Monitors & Displays</small>
+            <p>BradLumin HDR displays & Continuum Flow for multi-device workflows.</p>
+          </div>
+          <div class="pro-card">
+            <h5>BradMotors™</h5>
+            <small>Smart mobility</small>
+            <p>Embedded AI for vehicle autonomy, safety stacks and BradOS Auto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="section-content">
-        <h3>BradSec: Uncompromised Security</h3>
-        <p>Advanced, secure protocols ensuring your data and privacy are always protected.</p>
-    </div>
+    <section class="section" id="tech">
+      <div class="container two-col">
+        <div>
+          <h3>🧠 Core Technologies (The Engine)</h3>
+          <div class="details-block">
+            <p><strong>NeuroSense AI</strong> — on-device adaptive intelligence for personalization, predictive UX, computational photography, and secure inference.</p>
+            <p><strong>BradOS</strong> — family of OS builds: Mobile, Slate, Compute, and Nano (IoT). Secure, modular, and optimized for BradCore silicon.</p>
+            <p><strong>BradSec</strong> — hardware-rooted security (HSM, secure boot, signed modules, tamper detection). BradVerify & Facelock included.</p>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:.8rem 0">
+            <h4 style="margin:.4rem 0">Silicon — BradCore & BradXon</h4>
+            <p><strong>BradCore™</strong>: efficient ARMv9-based SoCs with BradNPU and BradFx GPUs — built for power & battery life across phones, tablets & laptops.</p>
+            <p><strong>BradXon™</strong>: the high-end cognitive processing lineup — adaptive neural fabrics, AIMPs (AI model processors), and extreme scalability for servers and research workstations.</p>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:.8rem 0">
+            <h4 style="margin:.4rem 0">Software Innovations</h4>
+            <ul style="color:var(--muted)">
+              <li><strong>EROE</strong> — Eco-Render Optimization Engine for smart performance-per-watt.</li>
+              <li><strong>AMF</strong> — Adaptive Memory Flow: predictive memory tiering + prefetching.</li>
+              <li><strong>PPB</strong> — Proximity Performance Boost: secure workload sharing between nearby Brad devices.</li>
+              <li><strong>OmniLink</strong> — low-latency secure device protocol for Continuum Flow & BradConnect.</li>
+              <li><strong>Continuum Flow</strong> — tasks, clipboard, and context flow across device boundaries seamlessly.</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="section-content">
-        <h3>NeuroSense AI</h3>
-        <p>Our innovative AI framework that learns and adapts, making your tech interaction more intuitive than ever before.</p>
-    </div>
+        <aside>
+          <div class="details-block">
+            <h4>Why Brad Devices?</h4>
+            <div class="kv">
+              <span>Vertical Integration</span><span>Edge AI First</span><span>Exam-Grade Security</span><span>Eco-aware (EROE)</span>
+            </div>
+            <hr style="margin:.8rem 0;border-top:1px solid rgba(255,255,255,0.03)">
+            <h4>Roadmap Highlights</h4>
+            <ul style="color:var(--muted)">
+              <li>2025 — Brad Devices early prototypes & OS pilots</li>
+              <li>2026 — BradCore silicon sampling, BradOS Beta public</li>
+              <li>2027 — BradXon research nodes & BradComp Pro release</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-    <div class="section-content">
-        <h3>Vertical Integration</h3>
-        <p>Combining hardware and software for seamless interoperability, superior performance and innovation.</p>
-    </div>
+    <section class="section" id="ecosystem">
+      <div class="container">
+        <h3>🔗 Brad Ecosystem — Deep Integration</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>BradCloud</h4>
+            <p>Encrypted backups, device restore, and secure vaults for user data.</p>
+          </div>
+          <div class="card">
+            <h4>BradSearch & BradBrowse</h4>
+            <p>Privacy-conscious search and a fast, secure browser that respects user data and integrates with NeuroSense.</p>
+          </div>
+          <div class="card">
+            <h4>BradOffice</h4>
+            <p>Docs, Sheets, Slides — with NeuroSense assistance for smart summarization, formulas and adaptive templates.</p>
+          </div>
+          <div class="card">
+            <h4>BradLabs</h4>
+            <p>R&D, prototyping, and silicon optimizations — where hardware meets software engineering.</p>
+          </div>
+          <div class="card">
+            <h4>BradSec</h4>
+            <p>Secure boot chains, HSM-backed keys, tamper detection, and exam-level lockdown with classroom CCU tools.</p>
+          </div>
+          <div class="card">
+            <h4>BradHub</h4>
+            <p>A curated app marketplace for certified BradApps and developer tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="section-content">
-        <h3>EROE & AMF</h3>
-        <p>Our Eco-friendly Optimization Engine (EROE) and Advanced Materials Framework (AMF) for peak performance and durability.</p>
-    </div>
+    <section class="section" id="cta">
+      <div class="container">
+        <div style="display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap">
+          <div>
+            <h3>Ready to collaborate?</h3>
+            <p style="color:var(--muted)">If you're an investor, institution, or R&D partner and want to pilot Brad technology — let's connect.</p>
+          </div>
+          <div style="display:flex;gap:.6rem">
+            <a class="btn" href="mailto:brad.verse.official@gmail.com">Contact BradVerse</a>
+            <a class="btn secondary" href="about.html">Learn Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="section-content">
-        <h3>Future-Forward Design</h3>
-        <p>Sleek, modern aesthetics combined with cutting-edge functionality in every Brad Device.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Brad Devices · Part of BradVerse • Built by The Architect</p>
+      <p><a href="mailto:brad.verse.official@gmail.com">brad.verse.official@gmail.com</a> · <a href="https://github.com/BradDevicesOfficial" target="_blank">GitHub</a></p>
     </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Brad Devices. All rights reserved.</p>
-        <p>Redefining Integrated Technology.</p>
-        <p>Contact: info@braddevices.co.ke</p>
-    </footer>
+  <script>
+    // mobile nav toggle
+    const navToggle = document.getElementById('navToggle'), mobileNav = document.getElementById('mobileNav');
+    navToggle && navToggle.addEventListener('click', ()=> {
+      const open = mobileNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open?'true':'false');
+      mobileNav.setAttribute('aria-hidden', open?'false':'true');
+    });
+  </script>
 </body>
-</html>
-
-
+    </html>
+    
