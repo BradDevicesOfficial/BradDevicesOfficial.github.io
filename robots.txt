@@ -1,4 +1,7 @@
+# Allow all web crawlers to access the entire site
 User-agent: *
-Allow: /
+Disallow:
 
+# Location of the sitemap file
 Sitemap: https://braddevicesofficial.github.io/sitemap.xml
+
